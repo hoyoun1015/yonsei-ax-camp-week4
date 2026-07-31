@@ -1,0 +1,15 @@
+# OMC 세션 상태 (내부 도구 상태·에이전트 추적 로그, 연구 산출물이 아님)
+.omc/
+**/.omc/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Office 임시/백업 파일
+~$*

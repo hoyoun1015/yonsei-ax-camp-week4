@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>가상 연구실 — 픽셀 랩</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DungGeunMo&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <header class="marquee">
+    <h1>가상 연구실</h1>
+    <p class="marquee-sub">4주차 · 조건민감 화학설계 실험</p>
+  </header>
+
+  <nav class="cartridge-row">
+    <button class="cartridge team active" data-scene="team">
+      <span class="cart-icon">🧪</span>
+      <span class="cart-label">TEAM LAB</span>
+      <span class="cart-tag">5 agents · 7 calls</span>
+    </button>
+    <button class="cartridge solo" data-scene="solo">
+      <span class="cart-icon">🤖</span>
+      <span class="cart-label">SOLO AGENT</span>
+      <span class="cart-tag">1 agent · 1 call</span>
+    </button>
+    <button class="cartridge campaign" data-scene="campaign">
+      <span class="cart-icon">🏆</span>
+      <span class="cart-label">CAMPAIGN</span>
+      <span class="cart-tag">n=20 전체 결과</span>
+    </button>
+  </nav>
+
+  <section class="control-plate" id="control-plate">
+    <div class="control-row">
+      <label for="task-select">TASK</label>
+      <select id="task-select"></select>
+      <span id="task-k-badge" class="k-badge">k=?</span>
+    </div>
+    <p id="task-prompt" class="task-prompt"></p>
+  </section>
+
+  <main class="stage">
+
+    <div class="scene scene-team" id="scene-team">
+      <div class="room-floor">
+        <div class="room-wall">
+          <div class="ceiling-light l1"></div>
+          <div class="ceiling-light l2"></div>
+          <div class="ceiling-light l3"></div>
+          <div class="wall-window"></div>
+          <div class="wall-poster">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="room-shelf left"></div>
+          <div class="room-shelf right"></div>
+          <div class="directory-sign">
+            <span class="dir-title">RESEARCH INSTITUTE · 4F</span>
+            4-A BIOCHEMISTRY<br>
+            4-B MATERIALS SCI<br>
+            4-C ANALYTICAL CHEM<br>
+            <span class="here">▶ 4-D SYNTHESIS (HERE)</span>
+          </div>
+          <div class="fire-extinguisher"></div>
+        </div>
+        <div class="room-tiles">
+          <div class="fume-hood"></div>
+          <div class="sink-station"></div>
+          <div class="storage-cabinet"></div>
+          <div class="whiteboard"></div>
+          <div class="burner-station">
+            <div class="burner"></div>
+            <div class="burner"></div>
+          </div>
+          <div class="table-block">
+            <div class="table-papers"></div>
+            <div class="table-flask-2"></div>
+            <div class="table-laptop"></div>
+          </div>
+
+          <div class="sprite-mount mount-pi" data-speaker="pi">
+            <div class="sprite-anchor"><span class="prop">📋</span><div class="sprite-canvas" data-role="pi"></div></div>
+            <div class="name-tag">PI</div>
+          </div>
+          <div class="sprite-mount mount-sc" data-speaker="synthetic_chemist">
+            <div class="sprite-anchor"><span class="prop">🧪</span><div class="sprite-canvas" data-role="synthetic_chemist"></div></div>
+            <div class="name-tag">합성화학자</div>
+          </div>
+          <div class="sprite-mount mount-mc" data-speaker="mechanistic_chemist">
+            <div class="sprite-anchor"><span class="prop">🔬</span><div class="sprite-canvas" data-role="mechanistic_chemist"></div></div>
+            <div class="name-tag">메커니즘전문가</div>
+          </div>
+          <div class="sprite-mount mount-safety" data-speaker="safety_specialist">
+            <div class="sprite-anchor"><span class="prop">🦺</span><div class="sprite-canvas" data-role="safety_specialist"></div></div>
+            <div class="name-tag">안전전문가</div>
+          </div>
+          <div class="sprite-mount mount-critic" data-speaker="critic">
+            <div class="sprite-anchor"><span class="prop">🧐</span><div class="sprite-canvas" data-role="critic"></div></div>
+            <div class="name-tag">Critic</div>
+          </div>
+        </div>
+      </div>
+      <div class="transport">
+        <button id="prev-btn" class="pixel-btn" aria-label="이전 라운드">◂</button>
+        <button id="play-btn" class="pixel-btn primary" aria-label="재생">▶</button>
+        <button id="next-btn" class="pixel-btn" aria-label="다음 라운드">▸</button>
+        <div class="progress-dots" id="progress-dots"></div>
+        <span id="round-indicator" class="round-indicator">0 / 0</span>
+      </div>
+    </div>
+
+    <div class="scene scene-solo" id="scene-solo" hidden>
+      <div class="room-floor">
+        <div class="room-wall dim"></div>
+        <div class="room-tiles dim">
+          <div class="monitor-desk"></div>
+          <div class="sprite-mount mount-robot">
+            <div class="sprite-anchor"><div class="sprite-canvas" data-role="robot"></div></div>
+            <div class="name-tag">SINGLE_AGENT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scene scene-campaign" id="scene-campaign" hidden>
+      <div class="campaign-screen">
+        <div class="campaign-title">20 TASKS COMPLETE</div>
+        <div class="campaign-grid" id="campaign-grid"></div>
+        <div class="campaign-row">
+          <div class="campaign-stat"><span class="cs-label">H1 · TEAM WINS</span><span id="c-h1" class="cs-val">—</span></div>
+          <div class="campaign-stat"><span class="cs-label">Wilcoxon p</span><span id="c-p1" class="cs-val">—</span></div>
+          <div class="campaign-stat"><span class="cs-label">Cohen's dz</span><span id="c-dz" class="cs-val">—</span></div>
+        </div>
+        <div class="campaign-row">
+          <div class="campaign-stat warn"><span class="cs-label">H2 · slope (k)</span><span id="c-slope" class="cs-val">—</span></div>
+          <div class="campaign-stat warn"><span class="cs-label">p-value</span><span id="c-p2" class="cs-val">—</span></div>
+          <div class="campaign-stat warn"><span class="cs-label">블라인딩 뚫림</span><span id="c-blind" class="cs-val">—</span></div>
+        </div>
+        <div class="k-bars" id="k-bars"></div>
+        <p class="campaign-note">H1(팀 우위)은 강하게 지지, H2(난이도 클수록 우위 확대)는 지지되지 않고 오히려 방향이 반전됨. 블라인딩은 사실상 실패.</p>
+      </div>
+    </div>
+
+    <div class="dialogue-box" id="dialogue-box">
+      <div class="dialogue-head">
+        <span id="bubble-speaker">대기 중</span>
+        <span id="bubble-round" class="round-tag">라운드 -</span>
+      </div>
+      <pre id="bubble-text" class="dialogue-text">TEAM LAB 탭에서 재생을 누르면 팀 논의가 순서대로 출력됩니다.</pre>
+    </div>
+  </main>
+
+  <section class="results-screen" id="results-screen">
+    <div class="results-title">RESULT</div>
+    <div id="gap-chip" class="gap-chip">GAP —</div>
+    <div id="score-bars" class="score-bars"></div>
+    <div id="blind-guess" class="blind-guess"></div>
+  </section>
+
+  <footer class="footnote">
+    조건B는 셀프시뮬레이션이 아니라, 실제로 서로 다른 에이전트 호출 7회(초안→비판→개선→비판→개선→비판→PI통합)로 생성된 결과입니다.
+  </footer>
+
+  <script src="/static/sprites.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+{
+  "note": "k=1~2(n=8) 문헌일치 보조 객관지표. 사전 확정된 answer key(4항목: 시약/용매/온도/선택성전략) 대비 0-1 채점, 블라인드 유지(조건 라벨 제거된 파일만 채점자에게 제공), 채점자는 과제별 독립 에이전트 8개.",
+  "max_per_task": 4,
+  "totalA": 30,
+  "totalB": 29,
+  "pct_A": 0.9375,
+  "pct_B": 0.90625,
+  "mean_lit_gap": -0.125,
+  "b_wins": 1,
+  "ties": 6,
+  "a_wins": 1,
+  "rubric_mean_gap_same8": 1.359375,
+  "per_task": [
+    {
+      "id": "T1",
+      "k": 1,
+      "order": "B_first",
+      "litA_items": {
+        "a": 1,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litB_items": {
+        "a": 1,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litA": 4,
+      "litB": 4,
+      "lit_gap": 0,
+      "rubric_gap_4dim": 1.25,
+      "note": ""
+    },
+    {
+      "id": "T4",
+      "k": 1,
+      "order": "B_first",
+      "litA_items": {
+        "a": 1,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litB_items": {
+        "a": 1,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litA": 4,
+      "litB": 4,
+      "lit_gap": 0,
+      "rubric_gap_4dim": 2.25,
+      "note": ""
+    },
+    {
+      "id": "T5",
+      "k": 1,
+      "order": "A_first",
+      "litA_items": {
+        "a": 0,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litB_items": {
+        "a": 1,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litA": 3,
+      "litB": 4,
+      "lit_gap": 1,
+      "rubric_gap_4dim": 1.25,
+      "note": "A(제안1)이 그리냐르 당량 미제시로 (a) 불일치"
+    },
+    {
+      "id": "T6",
+      "k": 1,
+      "order": "B_first",
+      "litA_items": {
+        "a": 1,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litB_items": {
+        "a": 1,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litA": 4,
+      "litB": 4,
+      "lit_gap": 0,
+      "rubric_gap_4dim": 2.5,
+      "note": ""
+    },
+    {
+      "id": "T7",
+      "k": 2,
+      "order": "B_first",
+      "litA_items": {
+        "a": 1,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litB_items": {
+        "a": 0,
+        "b": 1,
+        "c": 0,
+        "d": 1
+      },
+      "litA": 4,
+      "litB": 2,
+      "lit_gap": -2,
+      "rubric_gap_4dim": 0.5,
+      "note": "조건B(제안1)가 모노양성자화+Boc2O 1당량 전략·MeOH/수계 용매로 (a)(c) 모두 문헌표준과 불일치"
+    },
+    {
+      "id": "T8",
+      "k": 2,
+      "order": "A_first",
+      "litA_items": {
+        "a": 0,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litB_items": {
+        "a": 0,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litA": 3,
+      "litB": 3,
+      "lit_gap": 0,
+      "rubric_gap_4dim": 1,
+      "note": "A·B 모두 Ac2O를 0.2~0.35당량으로 제시해 문헌기준(0.9~1.0당량)과 불일치"
+    },
+    {
+      "id": "T9",
+      "k": 2,
+      "order": "B_first",
+      "litA_items": {
+        "a": 1,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litB_items": {
+        "a": 1,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litA": 4,
+      "litB": 4,
+      "lit_gap": 0,
+      "rubric_gap_4dim": 1,
+      "note": ""
+    },
+    {
+      "id": "T10",
+      "k": 2,
+      "order": "A_first",
+      "litA_items": {
+        "a": 1,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litB_items": {
+        "a": 1,
+        "b": 1,
+        "c": 1,
+        "d": 1
+      },
+      "litA": 4,
+      "litB": 4,
+      "lit_gap": 0,
+      "rubric_gap_4dim": 1.125,
+      "note": ""
+    }
+  ]
+}

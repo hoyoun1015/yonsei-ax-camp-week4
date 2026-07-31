@@ -1,0 +1,267 @@
+{
+  "note": "4주차 n=20 실험 검산 결과. stats.json의 1차 통계를 재현하고, 논문용 강건성 검정(safety 차원 제외)·순서효과·차원별 분해를 추가함.",
+  "primary_4dim": {
+    "mean_gap": 1.11875,
+    "sd_gap": 0.6959410043810806,
+    "b_wins": 18,
+    "a_wins": 1,
+    "ties": 1,
+    "wilcoxon_W": 2.5,
+    "wilcoxon_p_normal_approx": 0.00018978722191967642,
+    "cohen_dz": 1.6075356861533614,
+    "h2_slope": -0.265625,
+    "h2_p": 0.011296656626875533,
+    "h2_r": -0.553795875576693,
+    "wilcoxon_p_exact_nonzero_n19": 1.9073486328125e-05
+  },
+  "robustness_3dim_safety_excluded": {
+    "mean_gap": 0.7916666666666667,
+    "sd_gap": 0.8733798701944181,
+    "b_wins": 17,
+    "a_wins": 2,
+    "ties": 1,
+    "wilcoxon_W": 27.5,
+    "wilcoxon_p_normal_approx": 0.005724299509088349,
+    "cohen_dz": 0.9064402486061859,
+    "h2_slope": -0.3375,
+    "h2_p": 0.010120719925300864,
+    "h2_r": -0.5606912702433242
+  },
+  "dimension_breakdown": {
+    "reagent": {
+      "meanA": 3.85,
+      "meanB": 4.725,
+      "diff": 0.875
+    },
+    "condition": {
+      "meanA": 3.95,
+      "meanB": 4.75,
+      "diff": 0.8
+    },
+    "mechanism": {
+      "meanA": 3.975,
+      "meanB": 4.675,
+      "diff": 0.7
+    },
+    "safety": {
+      "meanA": 2.825,
+      "meanB": 4.925,
+      "diff": 2.1
+    }
+  },
+  "order_effect": {
+    "n_B_first": 12,
+    "n_A_first": 8,
+    "mean_gap_B_first": 1.1979166666666667,
+    "mean_gap_A_first": 1.0,
+    "mannwhitney_p": 0.4134626693031541,
+    "note": "배치 재실행으로 12/8 불균형 발생. 순서효과는 유의하지 않음."
+  },
+  "blinding": {
+    "correct": 20,
+    "n": 20,
+    "binomial_p": 1.9073486328125e-06
+  },
+  "per_task": [
+    {
+      "id": "T1",
+      "k": 1,
+      "gap_4dim": 1.25,
+      "gap_3dim": 1,
+      "avgA": 3.75,
+      "avgB": 5,
+      "guessedB": true,
+      "order": "B_first"
+    },
+    {
+      "id": "T2",
+      "k": 3,
+      "gap_4dim": 1.125,
+      "gap_3dim": 0.9999999999999996,
+      "avgA": 3.75,
+      "avgB": 4.875,
+      "guessedB": true,
+      "order": "B_first"
+    },
+    {
+      "id": "T3",
+      "k": 5,
+      "gap_4dim": 1.0,
+      "gap_3dim": 0.666666666666667,
+      "avgA": 3.75,
+      "avgB": 4.75,
+      "guessedB": true,
+      "order": "B_first"
+    },
+    {
+      "id": "T4",
+      "k": 1,
+      "gap_4dim": 2.25,
+      "gap_3dim": 2,
+      "avgA": 2.75,
+      "avgB": 5,
+      "guessedB": true,
+      "order": "B_first"
+    },
+    {
+      "id": "T5",
+      "k": 1,
+      "gap_4dim": 1.25,
+      "gap_3dim": 1,
+      "avgA": 3.75,
+      "avgB": 5,
+      "guessedB": true,
+      "order": "A_first"
+    },
+    {
+      "id": "T6",
+      "k": 1,
+      "gap_4dim": 2.5,
+      "gap_3dim": 2.3333333333333335,
+      "avgA": 2.5,
+      "avgB": 5,
+      "guessedB": true,
+      "order": "B_first"
+    },
+    {
+      "id": "T7",
+      "k": 2,
+      "gap_4dim": 0.5,
+      "gap_3dim": 0.0,
+      "avgA": 4,
+      "avgB": 4.5,
+      "guessedB": true,
+      "order": "B_first"
+    },
+    {
+      "id": "T8",
+      "k": 2,
+      "gap_4dim": 1.0,
+      "gap_3dim": 0.666666666666667,
+      "avgA": 3.75,
+      "avgB": 4.75,
+      "guessedB": true,
+      "order": "A_first"
+    },
+    {
+      "id": "T9",
+      "k": 2,
+      "gap_4dim": 1,
+      "gap_3dim": 1,
+      "avgA": 4,
+      "avgB": 5,
+      "guessedB": true,
+      "order": "B_first"
+    },
+    {
+      "id": "T10",
+      "k": 2,
+      "gap_4dim": 1.125,
+      "gap_3dim": 0.8333333333333335,
+      "avgA": 3.5,
+      "avgB": 4.625,
+      "guessedB": true,
+      "order": "A_first"
+    },
+    {
+      "id": "T11",
+      "k": 3,
+      "gap_4dim": 1.25,
+      "gap_3dim": 1,
+      "avgA": 3.75,
+      "avgB": 5,
+      "guessedB": true,
+      "order": "B_first"
+    },
+    {
+      "id": "T12",
+      "k": 3,
+      "gap_4dim": 1.25,
+      "gap_3dim": 1,
+      "avgA": 3.75,
+      "avgB": 5,
+      "guessedB": true,
+      "order": "B_first"
+    },
+    {
+      "id": "T13",
+      "k": 3,
+      "gap_4dim": 1.5,
+      "gap_3dim": 1,
+      "avgA": 3.5,
+      "avgB": 5,
+      "guessedB": true,
+      "order": "A_first"
+    },
+    {
+      "id": "T14",
+      "k": 4,
+      "gap_4dim": 1.5,
+      "gap_3dim": 1,
+      "avgA": 3.5,
+      "avgB": 5,
+      "guessedB": true,
+      "order": "B_first"
+    },
+    {
+      "id": "T15",
+      "k": 4,
+      "gap_4dim": 0.75,
+      "gap_3dim": 1,
+      "avgA": 4,
+      "avgB": 4.75,
+      "guessedB": true,
+      "order": "A_first"
+    },
+    {
+      "id": "T16",
+      "k": 4,
+      "gap_4dim": 1.5,
+      "gap_3dim": 1,
+      "avgA": 3.5,
+      "avgB": 5,
+      "guessedB": true,
+      "order": "B_first"
+    },
+    {
+      "id": "T17",
+      "k": 4,
+      "gap_4dim": 1.5,
+      "gap_3dim": 1.3333333333333335,
+      "avgA": 3.5,
+      "avgB": 5,
+      "guessedB": true,
+      "order": "A_first"
+    },
+    {
+      "id": "T18",
+      "k": 5,
+      "gap_4dim": 0.0,
+      "gap_3dim": -1.0,
+      "avgA": 3.875,
+      "avgB": 3.875,
+      "guessedB": true,
+      "order": "A_first"
+    },
+    {
+      "id": "T19",
+      "k": 5,
+      "gap_4dim": -0.75,
+      "gap_3dim": -1.6666666666666665,
+      "avgA": 4.5,
+      "avgB": 3.75,
+      "guessedB": true,
+      "order": "B_first"
+    },
+    {
+      "id": "T20",
+      "k": 5,
+      "gap_4dim": 0.875,
+      "gap_3dim": 0.6666666666666665,
+      "avgA": 3.625,
+      "avgB": 4.5,
+      "guessedB": true,
+      "order": "A_first"
+    }
+  ]
+}
