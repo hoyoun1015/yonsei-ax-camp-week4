@@ -12,7 +12,9 @@
       "pick": "제안1",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "대안을 명시적으로 반박·기각하고 자기수정 문구를 남긴 서술(예: \"포화 NaHCO3는 pH 8.3 한계로 부적합\", \"촉매량으로 표기하되 근당량 필요할 수 있어 재확인\")",
+      "cue_category": "대안의 명시적 기각·배제"
     },
     {
       "id": "T2",
@@ -20,7 +22,9 @@
       "pick": "제안1",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "\"당량 상향 제안을 최종적으로 보류한다\"처럼 내부 반박·기각 이력이 본문에 남은 흔적",
+      "cue_category": "반론 흡수 잔존 문구"
     },
     {
       "id": "T3",
@@ -28,7 +32,9 @@
       "pick": "제안1",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "\"적가가 아니라 사전혼합\"·\"확정되지 않은 주장과 무관하게\" 같은 선행안 반박·철회 흔적",
+      "cue_category": "앞선 판단의 정정·철회"
     },
     {
       "id": "T4",
@@ -36,7 +42,9 @@
       "pick": "제안1",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "비판 반박 흔적의 유보 표현(\"메커니즘 가설 확정 여부와 무관하게\", \"동일시하지는 말 것\")",
+      "cue_category": "유보·미검증 표기"
     },
     {
       "id": "T5",
@@ -44,7 +52,9 @@
       "pick": "제안2",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "\"메커니즘 논쟁과 무관하게\"라는 내부 반박 잔존 문구",
+      "cue_category": "반론 흡수 잔존 문구"
     },
     {
       "id": "T6",
@@ -52,7 +62,9 @@
       "pick": "제안1",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "본문에 남은 \"…불가능하므로 정정\" 등 이전 초안 반박·교정 흔적",
+      "cue_category": "앞선 판단의 정정·철회"
     },
     {
       "id": "T7",
@@ -60,7 +72,9 @@
       "pick": "제안1",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "\"최종 폐기·채택하지 않음\"처럼 기각된 대안(대과량 단독법·Cu 킬레이션·pH-swing 추출)을 명시한 흔적",
+      "cue_category": "대안의 명시적 기각·배제"
     },
     {
       "id": "T8",
@@ -68,7 +82,9 @@
       "pick": "제안2",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "\"미해결 논쟁·A안·미검증 가설\" 같은 내부 심의 흔적",
+      "cue_category": "유보·미검증 표기"
     },
     {
       "id": "T9",
@@ -76,7 +92,9 @@
       "pick": "제안1",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "반박 흡수형 유보 표현(\"이론적 우려는 있으나\")과 배제 시약·게이트 조건 나열",
+      "cue_category": "유보·미검증 표기"
     },
     {
       "id": "T10",
@@ -84,7 +102,9 @@
       "pick": "제안2",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "\"PI 종합\" 표제와 대안 기각 사유(HBr·DMF 배제) 명시",
+      "cue_category": "역할·구조 표지 노출"
     },
     {
       "id": "T11",
@@ -92,7 +112,9 @@
       "pick": "제안1",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "포화 NH4Cl·Krapcho 등 대안을 pH·pKa 수치까지 들어 명시적으로 배제한 반박 흔적",
+      "cue_category": "대안의 명시적 기각·배제"
     },
     {
       "id": "T12",
@@ -100,7 +122,9 @@
       "pick": "제안1",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "\"카보양이온(옥소카베늄 아님)\", \"정정 적용\" 같은 명시적 오류 교정 흔적",
+      "cue_category": "앞선 판단의 정정·철회"
     },
     {
       "id": "T13",
@@ -108,7 +132,9 @@
       "pick": "제안2",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "Ph3P=CH2는 E/Z 없음 예외 명시 등 반론 흡수 흔적",
+      "cue_category": "반론 흡수 잔존 문구"
     },
     {
       "id": "T14",
@@ -116,7 +142,9 @@
       "pick": "제안1",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "자기 논거를 \"미검증 가설\"로 철회·재정당화한 흔적(CS2 배제, 촉매 부족 오해 교정 등 반박 흡수)",
+      "cue_category": "앞선 판단의 정정·철회"
     },
     {
       "id": "T15",
@@ -124,7 +152,9 @@
       "pick": "제안2",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "당량·적정·첨가순서에 안전(H2/O2 발열)·폐액·Hg(0) 규제·스케일업 권고까지 이질적 검토층이 덧붙은 흔적",
+      "cue_category": "이질적 검토층 덧붙음"
     },
     {
       "id": "T16",
@@ -132,7 +162,9 @@
       "pick": "제안1",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "G1·G3 안전게이트 번호와 배제 사유 명시(과염소산염·HMPA·방사성 표지 반박 흔적)",
+      "cue_category": "대안의 명시적 기각·배제"
     },
     {
       "id": "T17",
@@ -140,7 +172,9 @@
       "pick": "제안2",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "근거란에 남은 내부 논쟁 흔적(\"등속도점 반전 주장의 수학적 결함·인용 미검증\")",
+      "cue_category": "반론 흡수 잔존 문구"
     },
     {
       "id": "T18",
@@ -148,7 +182,9 @@
       "pick": "제안2",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "\"이번 게이트에서 제외/후속 게이트로 분리\" 식의 범위 축소·안전 게이트 협상 흔적",
+      "cue_category": "유보·미검증 표기"
     },
     {
       "id": "T19",
@@ -156,7 +192,9 @@
       "pick": "제안1",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "이전 초안 조항 참조(\"구 §2 E/F\")와 옵션 보류·게이트 결정 흔적",
+      "cue_category": "유보·미검증 표기"
     },
     {
       "id": "T20",
@@ -164,7 +202,21 @@
       "pick": "제안2",
       "correct": true,
       "deliberated_round1": true,
-      "confidence": "높음"
+      "confidence": "높음",
+      "cue": "경쟁 경로 전제를 반박하는 재정의(중성 O–H형 레트로-엔) + PubMed 인용·안전/실무 단서",
+      "cue_category": "대안의 명시적 기각·배제"
     }
-  ]
+  ],
+  "cue_coding": {
+    "note": "판정자가 자유 서술로 제시한 결정적 단서를 배타적 1차 범주로 사후 부호화했다. 부호화는 저자 단독 판단이며 독립 부호화자 확인을 받지 않았다.",
+    "categories": {
+      "대안의 명시적 기각·배제": 5,
+      "유보·미검증 표기": 5,
+      "앞선 판단의 정정·철회": 4,
+      "반론 흡수 잔존 문구": 4,
+      "역할·구조 표지 노출": 1,
+      "이질적 검토층 덧붙음": 1
+    },
+    "n": 20
+  }
 }
