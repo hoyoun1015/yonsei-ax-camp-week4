@@ -1,11 +1,11 @@
 {
-  "note": "k=1~2(n=8) 문헌일치 보조 객관지표. 사전 확정된 answer key(4항목: 시약/용매/온도/선택성전략) 대비 0-1 채점, 블라인드 유지(조건 라벨 제거된 파일만 채점자에게 제공), 채점자는 과제별 독립 에이전트 8개.",
+  "note": "k=1~2(n=8) 문헌일치 보조 객관지표. 사전 확정된 answer key(4항목: 시약/용매/온도/선택성전략) 대비 0-1 채점, 블라인드 유지(조건 라벨 제거된 파일만 채점자에게 제공), 채점자는 과제별 독립 에이전트 8개. [2026-07-31 정정] 화학 검토에서 발견된 answer key 오류 2건(T8 당량 기준, T7 용매 열거)을 고쳐 재채점했다. 정정 전 값은 *_original 필드에 보존했다.",
   "max_per_task": 4,
-  "totalA": 30,
-  "totalB": 29,
-  "pct_A": 0.9375,
-  "pct_B": 0.90625,
-  "mean_lit_gap": -0.125,
+  "totalA": 31,
+  "totalB": 31,
+  "pct_A": 0.96875,
+  "pct_B": 0.96875,
+  "mean_lit_gap": 0,
   "b_wins": 1,
   "ties": 6,
   "a_wins": 1,
@@ -31,7 +31,10 @@
       "litB": 4,
       "lit_gap": 0,
       "rubric_gap_4dim": 1.25,
-      "note": ""
+      "correction": "",
+      "litA_original": 4,
+      "litB_original": 4,
+      "lit_gap_original": 0
     },
     {
       "id": "T4",
@@ -53,7 +56,10 @@
       "litB": 4,
       "lit_gap": 0,
       "rubric_gap_4dim": 2.25,
-      "note": ""
+      "correction": "",
+      "litA_original": 4,
+      "litB_original": 4,
+      "lit_gap_original": 0
     },
     {
       "id": "T5",
@@ -75,7 +81,10 @@
       "litB": 4,
       "lit_gap": 1,
       "rubric_gap_4dim": 1.25,
-      "note": "A(제안1)이 그리냐르 당량 미제시로 (a) 불일치"
+      "correction": "",
+      "litA_original": 3,
+      "litB_original": 4,
+      "lit_gap_original": 1
     },
     {
       "id": "T6",
@@ -97,7 +106,10 @@
       "litB": 4,
       "lit_gap": 0,
       "rubric_gap_4dim": 2.5,
-      "note": ""
+      "correction": "",
+      "litA_original": 4,
+      "litB_original": 4,
+      "lit_gap_original": 0
     },
     {
       "id": "T7",
@@ -112,36 +124,42 @@
       "litB_items": {
         "a": 0,
         "b": 1,
-        "c": 0,
+        "c": 1,
         "d": 1
       },
       "litA": 4,
-      "litB": 2,
-      "lit_gap": -2,
+      "litB": 3,
+      "lit_gap": -1,
       "rubric_gap_4dim": 0.5,
-      "note": "조건B(제안1)가 모노양성자화+Boc2O 1당량 전략·MeOH/수계 용매로 (a)(c) 모두 문헌표준과 불일치"
+      "correction": "키 정정: THF/물·MeOH도 Boc2O 보호의 통용 매질",
+      "litA_original": 4,
+      "litB_original": 2,
+      "lit_gap_original": -2
     },
     {
       "id": "T8",
       "k": 2,
       "order": "A_first",
       "litA_items": {
-        "a": 0,
+        "a": 1,
         "b": 1,
         "c": 1,
         "d": 1
       },
       "litB_items": {
-        "a": 0,
+        "a": 1,
         "b": 1,
         "c": 1,
         "d": 1
       },
-      "litA": 3,
-      "litB": 3,
+      "litA": 4,
+      "litB": 4,
       "lit_gap": 0,
       "rubric_gap_4dim": 1,
-      "note": "A·B 모두 Ac2O를 0.2~0.35당량으로 제시해 문헌기준(0.9~1.0당량)과 불일치"
+      "correction": "키 정정: 저당량이 통계적 모노아실화의 표준 전략",
+      "litA_original": 3,
+      "litB_original": 3,
+      "lit_gap_original": 0
     },
     {
       "id": "T9",
@@ -163,7 +181,10 @@
       "litB": 4,
       "lit_gap": 0,
       "rubric_gap_4dim": 1,
-      "note": ""
+      "correction": "",
+      "litA_original": 4,
+      "litB_original": 4,
+      "lit_gap_original": 0
     },
     {
       "id": "T10",
@@ -185,7 +206,15 @@
       "litB": 4,
       "lit_gap": 0,
       "rubric_gap_4dim": 1.125,
-      "note": ""
+      "correction": "",
+      "litA_original": 4,
+      "litB_original": 4,
+      "lit_gap_original": 0
     }
-  ]
+  ],
+  "sensitivity": {
+    "키_정정_전": -0.125,
+    "T8만_정정": -0.125,
+    "T7T8_모두_정정": 0
+  }
 }

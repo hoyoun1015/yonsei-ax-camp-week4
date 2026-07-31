@@ -1,0 +1,180 @@
+{
+  "note": "1차 채점과 독립 재채점의 일치도. 두 라운드는 동일한 블라인드 자료와 동일한 제시 순서를 사용했다.",
+  "n_tasks": 20,
+  "item_exact_agreement": 0.28125,
+  "item_within_1_agreement": 0.95,
+  "item_icc21": 0.7034709997089893,
+  "gap_pearson_r": 0.4113645941948426,
+  "gap_pearson_p": 0.0715500504997731,
+  "gap_icc21": 0.35938860579140763,
+  "mean_gap_round1": 1.11875,
+  "mean_gap_round2": 0.8125,
+  "b_wins_round2": 19,
+  "ties_round2": 0,
+  "a_wins_round2": 1,
+  "wilcoxon_p_round2": 0.00028362327736219326,
+  "blind_correct_round2": 20,
+  "blind_agreement_between_rounds": 1.0,
+  "per_task": [
+    {
+      "id": "T1",
+      "k": 1,
+      "gap_round1": 1.25,
+      "gap_round2": 1.0,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T2",
+      "k": 3,
+      "gap_round1": 1.125,
+      "gap_round2": 0.75,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T3",
+      "k": 5,
+      "gap_round1": 1,
+      "gap_round2": 1.125,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T4",
+      "k": 1,
+      "gap_round1": 2.25,
+      "gap_round2": 1.5,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T5",
+      "k": 1,
+      "gap_round1": 1.25,
+      "gap_round2": 0.75,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T6",
+      "k": 1,
+      "gap_round1": 2.5,
+      "gap_round2": 1.375,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T7",
+      "k": 2,
+      "gap_round1": 0.5,
+      "gap_round2": 0.75,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T8",
+      "k": 2,
+      "gap_round1": 1,
+      "gap_round2": 1.0,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T9",
+      "k": 2,
+      "gap_round1": 1,
+      "gap_round2": 0.625,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T10",
+      "k": 2,
+      "gap_round1": 1.125,
+      "gap_round2": 1.25,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T11",
+      "k": 3,
+      "gap_round1": 1.25,
+      "gap_round2": 0.25,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T12",
+      "k": 3,
+      "gap_round1": 1.25,
+      "gap_round2": 1.375,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T13",
+      "k": 3,
+      "gap_round1": 1.5,
+      "gap_round2": 0.75,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T14",
+      "k": 4,
+      "gap_round1": 1.5,
+      "gap_round2": 1.0,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T15",
+      "k": 4,
+      "gap_round1": 0.75,
+      "gap_round2": 0.5,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T16",
+      "k": 4,
+      "gap_round1": 1.5,
+      "gap_round2": 1.5,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T17",
+      "k": 4,
+      "gap_round1": 1.5,
+      "gap_round2": 0.5,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T18",
+      "k": 5,
+      "gap_round1": 0,
+      "gap_round2": 0.125,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T19",
+      "k": 5,
+      "gap_round1": -0.75,
+      "gap_round2": 0.875,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    },
+    {
+      "id": "T20",
+      "k": 5,
+      "gap_round1": 0.875,
+      "gap_round2": -0.75,
+      "guessedB_round1": true,
+      "guessedB_round2": true
+    }
+  ]
+}

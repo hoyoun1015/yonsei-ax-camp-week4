@@ -1,0 +1,170 @@
+{
+  "note": "정식 식별 질문. 채점을 같은 호출에 넣지 않고, 루브릭 문구가 없는 자료로 별도 판정자 20명에게 어느 쪽이 멀티에이전트 산출물인지만 물었다. 1차 블라인딩 측정(더 숙고돼 보이는 쪽 지목)의 순환성 비판에 대응해 추가 실행했다.",
+  "n": 20,
+  "correct": 20,
+  "accuracy": 1.0,
+  "binomial_p": 1.9073486328125e-06,
+  "agreement_with_round1_deliberated_pick": 1.0,
+  "per_task": [
+    {
+      "id": "T1",
+      "order": "B_first",
+      "pick": "제안1",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T2",
+      "order": "B_first",
+      "pick": "제안1",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T3",
+      "order": "B_first",
+      "pick": "제안1",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T4",
+      "order": "B_first",
+      "pick": "제안1",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T5",
+      "order": "A_first",
+      "pick": "제안2",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T6",
+      "order": "B_first",
+      "pick": "제안1",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T7",
+      "order": "B_first",
+      "pick": "제안1",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T8",
+      "order": "A_first",
+      "pick": "제안2",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T9",
+      "order": "B_first",
+      "pick": "제안1",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T10",
+      "order": "A_first",
+      "pick": "제안2",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T11",
+      "order": "B_first",
+      "pick": "제안1",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T12",
+      "order": "B_first",
+      "pick": "제안1",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T13",
+      "order": "A_first",
+      "pick": "제안2",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T14",
+      "order": "B_first",
+      "pick": "제안1",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T15",
+      "order": "A_first",
+      "pick": "제안2",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T16",
+      "order": "B_first",
+      "pick": "제안1",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T17",
+      "order": "A_first",
+      "pick": "제안2",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T18",
+      "order": "A_first",
+      "pick": "제안2",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T19",
+      "order": "B_first",
+      "pick": "제안1",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    },
+    {
+      "id": "T20",
+      "order": "A_first",
+      "pick": "제안2",
+      "correct": true,
+      "deliberated_round1": true,
+      "confidence": "높음"
+    }
+  ]
+}
