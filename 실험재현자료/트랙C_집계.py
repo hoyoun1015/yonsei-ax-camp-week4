@@ -17,9 +17,11 @@ import sys
 from scipy import stats as st
 
 DIMS = ["reagent", "condition", "mechanism", "safety"]
+REPLACED = {}
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 DATA = os.path.join(ROOT, "lab_app", "data")
-REPLACED = {"T14": "T14b", "T18": "T18b", "T20": "T20b"}
+# 교체 대상. 실제로 완주한 교체본만 반영하며, 미완주분은 원본을 유지한다.
+PLANNED = {"T14": "T14b", "T18": "T18b", "T20": "T20b"}
 
 
 def load(name):
@@ -80,6 +82,12 @@ def main(path):
         wf = json.load(fh)
     reps = {r["id"]: r for r in wf["replacements"]}
     r3 = {r["id"]: r for r in wf["round3_kept"]}
+    # 완주한 교체본만 실제 교체로 인정한다.
+    global REPLACED
+    REPLACED = {o: n for o, n in PLANNED.items() if n in reps}
+    missing = {o: n for o, n in PLANNED.items() if n not in reps}
+    if missing:
+        print("미완주 교체본:", missing, "→ 해당 원본 과제를 그대로 유지한다.\n")
     tasks = {t["task"]["id"]: t for t in load("transcripts.json")}
     rel = {r["id"]: r for r in load("judge_reliability.json")["per_task"]}
 
@@ -148,11 +156,13 @@ def main(path):
             for rec in new["judge_rounds"][:3]:
                 a, b, _ = unblind(rec, new["order"])
                 gs.append(avg(b, DIMS) - avg(a, DIMS))
-        else:
+        elif i in r3:
             g1 = tasks[i]["judge"]["gap"]
             g2 = rel[i]["gap_round2"]
             a, b, _ = unblind(r3[i], tasks[i]["judge"]["order"])
             gs = [g1, g2, avg(b, DIMS) - avg(a, DIMS)]
+        else:
+            gs = []
         if len(gs) == 3:
             triples.append(gs)
             for j in range(3):

@@ -1,0 +1,302 @@
+{
+  "note": "트랙 C 집계. P1은 전제 결함 과제 3건을 교체한 정정 세트를, P5는 3라운드 채점 신뢰도를 다룬다. 원본 세트 통계도 함께 남겨 교체의 영향을 비교할 수 있게 했다.",
+  "replaced": {
+    "T14": "T14b",
+    "T20": "T20b"
+  },
+  "original_set": {
+    "label": "원본 20건",
+    "n": 20,
+    "mean_gap": 1.11875,
+    "b_wins": 18,
+    "ties": 1,
+    "a_wins": 1,
+    "wilcoxon_p_approx": 0.00018978722191967642,
+    "wilcoxon_p_exact_nonzero": 1.9073486328125e-05,
+    "cohen_dz": 1.6075356861533612,
+    "k_slope": -0.265625,
+    "k_p": 0.011296656626875533,
+    "k_spearman_rho": -0.4394789670190228,
+    "k_spearman_p": 0.052521722717736904
+  },
+  "corrected_set": {
+    "label": "정정 20건",
+    "n": 20,
+    "mean_gap": 1.0875,
+    "b_wins": 18,
+    "ties": 1,
+    "a_wins": 1,
+    "wilcoxon_p_approx": 0.00022095572460564613,
+    "wilcoxon_p_exact_nonzero": 2.6702880859375e-05,
+    "cohen_dz": 1.5479183816428836,
+    "k_slope": -0.290625,
+    "k_p": 0.005142999088979585,
+    "k_spearman_rho": -0.48373546489791297,
+    "k_spearman_p": 0.03069602970149322
+  },
+  "corrected_dim_breakdown": {
+    "reagent": {
+      "diff": 0.85,
+      "wilcoxon_p_approx": 0.00222221817981864,
+      "share": 0.19540229885057472
+    },
+    "condition": {
+      "diff": 0.8,
+      "wilcoxon_p_approx": 0.0057563859231184004,
+      "share": 0.18390804597701152
+    },
+    "mechanism": {
+      "diff": 0.625,
+      "wilcoxon_p_approx": 0.022182565641915317,
+      "share": 0.14367816091954025
+    },
+    "safety": {
+      "diff": 2.075,
+      "wilcoxon_p_approx": 7.906614580808633e-05,
+      "share": 0.47701149425287365
+    }
+  },
+  "corrected_3dim": {
+    "label": "정정 20건 · 안전성 제외",
+    "n": 20,
+    "mean_gap": 0.7583333333333333,
+    "b_wins": 16,
+    "ties": 2,
+    "a_wins": 2,
+    "wilcoxon_p_approx": 0.007508191544151082,
+    "wilcoxon_p_exact_nonzero": 0.0065765380859375,
+    "cohen_dz": 0.8511542625155546,
+    "k_slope": -0.37083333333333335,
+    "k_p": 0.004805149947526774,
+    "k_spearman_rho": -0.4596347109652575,
+    "k_spearman_p": 0.0414579491821447
+  },
+  "p5_three_round": {
+    "n": 19,
+    "icc21_three_rounds": 0.37790537183238554,
+    "round_mean_gaps": [
+      1.144736842105263,
+      0.9144736842105263,
+      1.1776315789473684
+    ],
+    "mean_of_round_means": 1.0789473684210527,
+    "sd_of_task_means": 0.39672043306879845,
+    "dz_on_round_averaged_gap": 2.7196667438451394,
+    "wilcoxon_p_on_round_averaged": 0.00013080209969983293,
+    "sign_stable_across_three_rounds": 18
+  },
+  "replacement_detail": [
+    {
+      "id": "T14b",
+      "replaces": "T14",
+      "k": 4,
+      "avgA": 3.5,
+      "avgB": 4.75,
+      "gap": 1.25,
+      "order": "A_first",
+      "guessedB": true,
+      "ident_correct": true,
+      "ident_cue": "제안2가 \"온도는 위치선택성 핸들이 아니다(25→5 °C 이득 ≤0.9 %p)\"라며 제안1의 핵심 논리(저온=para 선택성)를 정량 수치로 명시적으로 반박·기각하고, 대신 안전(ΔT_ad·MTT)→분석 밸리데이션(스파이크 회수율 보정 전 o/p 보고 금지)→상거동 순의 게이트로 과제 자체를 재정의한 점 — 서로 다른 전문가(공정안전·분석·원가)의 비판이 누적된 흔적."
+    },
+    {
+      "id": "T20b",
+      "replaces": "T20",
+      "k": 5,
+      "avgA": 3.5,
+      "avgB": 4.0,
+      "gap": 0.5,
+      "order": "A_first",
+      "guessedB": true,
+      "ident_correct": true,
+      "ident_cue": "제안2의 \"온도는 선택성 도구가 아니라 열적 여유 변수다\"처럼 앞선 온도 기반 선택성 논리를 명시적으로 반박·수정한 흔적이 있고, MTSR/MTT·DSC 열안전, 과산화물 시험지, 내부표준·qNMR 물질수지 ≥92%, 대조 아암, 허용 농도 범위 같은 이질적 전문가(안전·분석·공정) 제약이 협상된 형태로 병렬 삽입되어 있음 — 단일 패스 작성물이 아닌 다회 비판·종합의 지문."
+    }
+  ],
+  "per_task_corrected": [
+    {
+      "id": "T1",
+      "k": 1,
+      "avgA": 3.75,
+      "avgB": 5,
+      "gap": 1.25,
+      "order": "B_first",
+      "guessedB": true
+    },
+    {
+      "id": "T2",
+      "k": 3,
+      "avgA": 3.75,
+      "avgB": 4.875,
+      "gap": 1.125,
+      "order": "B_first",
+      "guessedB": true
+    },
+    {
+      "id": "T3",
+      "k": 5,
+      "avgA": 3.75,
+      "avgB": 4.75,
+      "gap": 1,
+      "order": "B_first",
+      "guessedB": true
+    },
+    {
+      "id": "T4",
+      "k": 1,
+      "avgA": 2.75,
+      "avgB": 5,
+      "gap": 2.25,
+      "order": "B_first",
+      "guessedB": true
+    },
+    {
+      "id": "T5",
+      "k": 1,
+      "avgA": 3.75,
+      "avgB": 5,
+      "gap": 1.25,
+      "order": "A_first",
+      "guessedB": true
+    },
+    {
+      "id": "T6",
+      "k": 1,
+      "avgA": 2.5,
+      "avgB": 5,
+      "gap": 2.5,
+      "order": "B_first",
+      "guessedB": true
+    },
+    {
+      "id": "T7",
+      "k": 2,
+      "avgA": 4,
+      "avgB": 4.5,
+      "gap": 0.5,
+      "order": "B_first",
+      "guessedB": true
+    },
+    {
+      "id": "T8",
+      "k": 2,
+      "avgA": 3.75,
+      "avgB": 4.75,
+      "gap": 1,
+      "order": "A_first",
+      "guessedB": true
+    },
+    {
+      "id": "T9",
+      "k": 2,
+      "avgA": 4,
+      "avgB": 5,
+      "gap": 1,
+      "order": "B_first",
+      "guessedB": true
+    },
+    {
+      "id": "T10",
+      "k": 2,
+      "avgA": 3.5,
+      "avgB": 4.625,
+      "gap": 1.125,
+      "order": "A_first",
+      "guessedB": true
+    },
+    {
+      "id": "T11",
+      "k": 3,
+      "avgA": 3.75,
+      "avgB": 5,
+      "gap": 1.25,
+      "order": "B_first",
+      "guessedB": true
+    },
+    {
+      "id": "T12",
+      "k": 3,
+      "avgA": 3.75,
+      "avgB": 5,
+      "gap": 1.25,
+      "order": "B_first",
+      "guessedB": true
+    },
+    {
+      "id": "T13",
+      "k": 3,
+      "avgA": 3.5,
+      "avgB": 5,
+      "gap": 1.5,
+      "order": "A_first",
+      "guessedB": true
+    },
+    {
+      "id": "T14b",
+      "replaces": "T14",
+      "k": 4,
+      "avgA": 3.5,
+      "avgB": 4.75,
+      "gap": 1.25,
+      "order": "A_first",
+      "guessedB": true,
+      "ident_correct": true,
+      "ident_cue": "제안2가 \"온도는 위치선택성 핸들이 아니다(25→5 °C 이득 ≤0.9 %p)\"라며 제안1의 핵심 논리(저온=para 선택성)를 정량 수치로 명시적으로 반박·기각하고, 대신 안전(ΔT_ad·MTT)→분석 밸리데이션(스파이크 회수율 보정 전 o/p 보고 금지)→상거동 순의 게이트로 과제 자체를 재정의한 점 — 서로 다른 전문가(공정안전·분석·원가)의 비판이 누적된 흔적."
+    },
+    {
+      "id": "T15",
+      "k": 4,
+      "avgA": 4,
+      "avgB": 4.75,
+      "gap": 0.75,
+      "order": "A_first",
+      "guessedB": true
+    },
+    {
+      "id": "T16",
+      "k": 4,
+      "avgA": 3.5,
+      "avgB": 5,
+      "gap": 1.5,
+      "order": "B_first",
+      "guessedB": true
+    },
+    {
+      "id": "T17",
+      "k": 4,
+      "avgA": 3.5,
+      "avgB": 5,
+      "gap": 1.5,
+      "order": "A_first",
+      "guessedB": true
+    },
+    {
+      "id": "T18",
+      "k": 5,
+      "avgA": 3.875,
+      "avgB": 3.875,
+      "gap": 0,
+      "order": "A_first",
+      "guessedB": true
+    },
+    {
+      "id": "T19",
+      "k": 5,
+      "avgA": 4.5,
+      "avgB": 3.75,
+      "gap": -0.75,
+      "order": "B_first",
+      "guessedB": true
+    },
+    {
+      "id": "T20b",
+      "replaces": "T20",
+      "k": 5,
+      "avgA": 3.5,
+      "avgB": 4.0,
+      "gap": 0.5,
+      "order": "A_first",
+      "guessedB": true,
+      "ident_correct": true,
+      "ident_cue": "제안2의 \"온도는 선택성 도구가 아니라 열적 여유 변수다\"처럼 앞선 온도 기반 선택성 논리를 명시적으로 반박·수정한 흔적이 있고, MTSR/MTT·DSC 열안전, 과산화물 시험지, 내부표준·qNMR 물질수지 ≥92%, 대조 아암, 허용 농도 범위 같은 이질적 전문가(안전·분석·공정) 제약이 협상된 형태로 병렬 삽입되어 있음 — 단일 패스 작성물이 아닌 다회 비판·종합의 지문."
+    }
+  ]
+}
