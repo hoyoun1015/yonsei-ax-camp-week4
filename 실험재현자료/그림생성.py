@@ -73,13 +73,13 @@ def dot_handles():
         Line2D([], [], marker="o", linestyle="none", markersize=6.5,
                markerfacecolor=SOLO, markeredgecolor=SOLO, label="조건A · 단일 LLM"),
         Line2D([], [], marker="o", linestyle="none", markersize=6.5,
-               markerfacecolor=TEAM, markeredgecolor=TEAM, label="조건B · 비판루프 팀"),
+               markerfacecolor=TEAM, markeredgecolor=TEAM, label="조건B · 비판 루프 팀"),
     ]
 
 
 def bar_handles():
     return [Patch(facecolor=SOLO, label="조건A · 단일 LLM"),
-            Patch(facecolor=TEAM, label="조건B · 비판루프 팀")]
+            Patch(facecolor=TEAM, label="조건B · 비판 루프 팀")]
 
 
 # ── 그림 1 ─────────────────────────────────────────────────────────────
@@ -336,10 +336,12 @@ def figure6():
         ax1.scatter([a], [y], s=26, color=SOLO, zorder=3, edgecolor=SURFACE, linewidth=1.0)
         ax1.scatter([b], [y], s=26, color=TEAM, zorder=3, edgecolor=SURFACE, linewidth=1.0)
     dr = sf["deliberation_residue"]
-    ax1.text(0.97, 0.03, "평균 %.2f 대 %.2f,  %d/20\n정확검정 p=%.1e"
+    # 주석은 자료 점과 겹치지 않도록 축 위쪽 여백에 둔다.
+    ax1.text(0.97, 0.97, "평균 %.2f 대 %.2f,  %d/20\n정확검정 p=%.1e"
              % (dr["mean_A"], dr["mean_B"], dr["b_higher"], dr["p_exact_nonzero"]),
-             transform=ax1.transAxes, fontsize=7.6, color=INK, ha="right", va="bottom",
-             linespacing=1.5)
+             transform=ax1.transAxes, fontsize=7.6, color=INK, ha="right", va="top",
+             linespacing=1.5,
+             bbox=dict(boxstyle="round,pad=0.35", facecolor=SURFACE, edgecolor="none", alpha=0.92))
     ax1.set_yticks(ys)
     ax1.set_yticklabels([r["id"] for r in rows], fontsize=7)
     ax1.set_xlabel("심의 잔여 표지 출현 횟수")

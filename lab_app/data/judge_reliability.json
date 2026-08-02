@@ -3,10 +3,10 @@
   "n_tasks": 20,
   "item_exact_agreement": 0.28125,
   "item_within_1_agreement": 0.95,
-  "item_icc21": 0.7034709997089893,
+  "item_icc21": 0.7040051061113769,
   "gap_pearson_r": 0.4113645941948426,
   "gap_pearson_p": 0.0715500504997731,
-  "gap_icc21": 0.35938860579140763,
+  "gap_icc21": 0.36434676434676433,
   "mean_gap_round1": 1.11875,
   "mean_gap_round2": 0.8125,
   "b_wins_round2": 19,
@@ -176,5 +176,8 @@
       "guessedB_round1": true,
       "guessedB_round2": true
     }
-  ]
+  ],
+  "gap_icc21_original": 0.35938860579140763,
+  "item_icc21_original": 0.7034709997089893,
+  "icc_note": "초판은 ICC(2,1) 분모에 (MS_C-MS_E)/n 항을 한 번만 넣어 실제보다 낮게 나왔다. 올바른 식 MS_R+(k-1)MS_E+k(MS_C-MS_E)/n 으로 다시 계산했고 초판 값은 *_original에 남겼다."
 }

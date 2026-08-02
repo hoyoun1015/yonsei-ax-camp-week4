@@ -63,7 +63,8 @@ def icc21(pairs):
     ms_rows = ss_rows / (n - 1)
     ms_cols = ss_cols / 1
     ms_err = ss_err / (n - 1)
-    denom = ms_rows + ms_cols / n + (2 - 1) * ms_err + (ms_cols - ms_err) / n
+    # ICC(2,1) = (MS_R - MS_E) / (MS_R + (k-1)MS_E + k(MS_C - MS_E)/n), k=2
+    denom = ms_rows + ms_err + 2 * (ms_cols - ms_err) / n
     return (ms_rows - ms_err) / denom if denom else float("nan")
 
 
